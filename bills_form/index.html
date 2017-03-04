@@ -1,0 +1,111 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Bills App</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<!--Start Form Section-->
+		<section>
+			<h1>Add Bills</h1>
+			<!--Start Form-->
+			<form id="dataForm" name="dataForm">
+				<div>
+					<label for="firstname">Name</label>
+					<input id="firstname" name="firstname" type="text" placeholder="Bill name" required></input>
+
+					<label for="date">Date</label>
+					<input id="date" name="date" type="date" required></input>	
+				</div>
+				<div>
+					<label for="amount">Amount</label>
+					<input id="amount" name="amount" type="number" placeholder="Bill amount" required></input>
+
+
+					<label for="type">Type</label>
+					<input list="type" name="type">
+  						<datalist id="type">
+    						<option value="A">
+    						<option value="B">
+    						<option value="C">
+  						</datalist>
+  					</input>
+				</div>
+				<!--Start Reset and Submit Button-->
+				<div>
+					<button type="reset">Cancel</button>
+					<button type="submit" class="push">Save</button>
+				<!--End Reset and Submit Button-->
+				</div>
+			<!--End Form-->
+			</form>
+		<!--End Form Section-->
+		</section>
+		<!--Start All Bills Section-->
+		<section class="add">
+			<h1>All Bills</h1>
+			<!--Star Filter Bills-->
+			<div class="filter">
+				<button id="nameOrder">Name</button>
+				<button id="amountOrder">Amount</button>
+				<button id="typeOrder">Type</button>
+			<!--End Filter Bills-->
+			</div>
+			<!--Star List-->
+			<div>
+				<ul id="list"></ul>
+			<!--End List-->
+			</div>
+		<!-- End All Bills Section-->
+		</section>
+		<!-- Start Total Bills Section-->
+		<section>
+			<table id="table">
+				<thead>
+					<tr>
+						<th>Bills A: </th>
+						<td>				
+							<input
+							type = "number"
+							name = "billsA"
+							id = "billsA"
+							disabled="0"
+							class="td">
+							</input>
+						</td>
+					</tr>
+					<tr>
+						<th>Bills B: </th>
+						<td>				
+							<input
+							type = "number"
+							name = "billsB"
+							id = "billsB"
+							disabled="0"
+							class="td">
+							</input>
+						</td>
+					</tr>
+					<tr>
+						<th>Bills C: </th>
+						<td>				
+							<input
+							type = "number"
+							name = "billsC"
+							id = "billsC"
+							disabled="0"
+							class="td">
+							</input>
+						</td>
+					</tr>			
+				</thead>			
+			</table>
+		<!-- End Total Bills Section-->
+		</section>		
+	</main>
+	<script src="js/main.js"></script>
+</body>
+</html>
