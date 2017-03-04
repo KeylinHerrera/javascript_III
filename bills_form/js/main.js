@@ -6,7 +6,7 @@ form.onsubmit = submitData;
 //--------Display Data Function--------//
 function displayData() {
 	var data = document.getElementById('list');
-	var template = '<li>Name: FIRSTNAME  / Amount:  AMOUNT  / Date:  DATE  / Type:   TYPE</li>';
+	var template = '<li>Name: FIRSTNAME  / Amount:  AMOUNT  / Date:  DATE  / Type:  TYPE </li>';
 	var html = '';
 
 	bills.forEach(function(allData){
@@ -14,7 +14,7 @@ function displayData() {
 			.replace('FIRSTNAME', allData.firstname)
 			.replace('DATE', allData.amount)
 			.replace('AMOUNT', allData.date)
-			.replace('sTYPE', allData .type);
+			.replace('TYPE', allData .type);
 	});
 
 	data.innerHTML = html;
