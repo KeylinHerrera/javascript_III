@@ -14,7 +14,7 @@ function displayData() {
 			.replace('FIRSTNAME', allData.firstname)
 			.replace('DATE', allData.amount)
 			.replace('AMOUNT', allData.date)
-			.replace('TYPE', allData .type);
+			.replace('TYPE', allData.type);
 	});
 
 	data.innerHTML = html;
